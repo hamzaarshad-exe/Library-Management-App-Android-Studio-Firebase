@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@drawable/button2"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Book ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView22"
+            android:textStyle="normal|bold"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="315dp"
+            android:layout_height="39dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtmybookid2"
+            android:hint="Book ID"
+            android:textAlignment="center"
+            android:background="@drawable/edittextwhite"
+            android:editable="false"
+            android:layout_weight="0.01"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

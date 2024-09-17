@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_admin__ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.publiclibrary.Admin_UI"
+    tools:showIn="@layout/activity_admin__ui">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TabHost
+            android:layout_width="200dip"
+            android:layout_height="300dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentTop="true"
+            android:id="@+id/tabhost2"
+            android:textAlignment="textStart">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue"
+                    android:textAlignment="textStart">
+
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include android:id="@+id/Atab1"
+                        layout="@layout/admintab1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="481dp"
+
+                        android:visibility="visible">
+                    </include>
+                    <include android:id="@+id/Atab2"
+                        layout="@layout/admintab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+                    </include>
+                    <include android:id="@+id/Atab3"
+                        layout="@layout/admintab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+                    </include>
+                    <include android:id="@+id/Atab4"
+                        layout="@layout/admintab4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+                    </include>
+                    <include android:id="@+id/Atab5"
+                        layout="@layout/admintab5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+                    </include>
+
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav1"
+            android:layout_width="328dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimaryDark">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/borrowed_book2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView25">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

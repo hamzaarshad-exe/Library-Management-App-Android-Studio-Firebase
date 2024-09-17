@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_admin__ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.publiclibrary.User_UI">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:text="Manage Book Details"
+                android:textStyle="normal|bold"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textAlignment="center" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="131dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtbookid2"
+                    android:hint="Book ID"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:background="@drawable/edittext"
+                    android:paddingStart="5dp" />
+
+                <Button
+                    android:text="Search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnsearchbook"
+                    android:background="@color/dark_red"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/txtbookid2" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtbookname2"
+                android:layout_weight="1.31"
+                android:hint="Book Name"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:background="@drawable/edittext"
+                android:paddingStart="5dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:text="Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/textView5"
+
+                android:textSize="18sp"
+                android:textColor="@color/blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:layout_width="215dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spincategory2"
+                    android:entries="@array/Category"
+                    android:background="@drawable/edittext" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/txtcategory"
+                    android:layout_alignEnd="@+id/spincategory2"
+                    android:hint="Category"
+                    android:background="@drawable/edittext"
+                    android:paddingStart="5dp"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:text="Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:layout_width="214dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinlocation2"
+                    android:entries="@array/Location"
+                    android:background="@drawable/edittext" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txtlocation"
+                    android:hint="Location"
+                    android:background="@drawable/edittext"
+                    android:paddingStart="5dp"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:text="Click here Update or Delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tv1"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textAlignment="center"
+                android:clickable="true" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Update"
+                    android:layout_width="145dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btnupdatebook"
+                    android:background="@color/blue"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true" />
+
+                <Button
+                    android:text="Delete"
+                    android:layout_width="145dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btndeletebook"
+                    android:background="@color/blue"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

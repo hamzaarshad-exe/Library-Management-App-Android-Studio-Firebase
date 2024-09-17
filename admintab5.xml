@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_admin__ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.publiclibrary.User_UI">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+            <TextView
+                android:text="Search Borrowed Books Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView31"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:text="Book ID"
+                android:ems="10"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="72dp"
+                android:id="@+id/txtsbookid"
+                android:background="@drawable/edittext"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/man"
+                android:id="@+id/imgprofile3"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@+id/txtsbookid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imgprofile3"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:text="Member Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView32"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+
+                    android:id="@+id/txtsname"
+                    android:textAlignment="center"
+                    android:background="@color/blue"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:text="Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView34"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtsaddress"
+                    android:textAlignment="center"
+                    android:background="@color/blue"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:text="Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView35"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtsgender"
+                    android:textAlignment="center"
+                    android:background="@color/blue"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:text="CNIC NO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView36"
+                    android:textAlignment="center"
+              android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtsnic"
+                    android:textAlignment="center"
+                    android:background="@color/blue"
+                    android:textColor="@color/white" />
+
+
+
+                <TextView
+                    android:text="Borrowed Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView37"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtsBD"
+                    android:textAlignment="center"
+                    android:background="@color/blue"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:text="Return Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView38"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtsRD"
+                    android:textAlignment="center"
+                    android:background="@color/blue"
+                    android:textColor="@color/white" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:text="Book Returned"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnsreturn"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@color/dark_red" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <Button
+                android:text="Search"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/btnsearchborrow"
+                android:textStyle="bold"
+                android:background="@color/dark_red"
+                android:textColor="@color/white"
+                android:layout_alignTop="@+id/txtsbookid"
+                android:layout_alignEnd="@+id/textView31" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

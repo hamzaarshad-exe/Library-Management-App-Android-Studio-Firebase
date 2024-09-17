@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.publiclibrary.User_UI">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_light"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:text="Search and Subscribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:id="@+id/textView13"
+                android:textStyle="normal|bold"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtubookid"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/edittext"
+                android:hint="Write Book ID you want"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView13"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="27dp"
+                android:id="@+id/btnusearchbook"
+                android:background="@color/dark_red"
+                android:layout_below="@+id/txtubookid"
+                android:textColor="@color/white"
+                android:layout_alignEnd="@+id/txtubookid"
+                android:layout_alignStart="@+id/txtubookid" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+
+                android:layout_alignParentTop="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="240dp"
+                android:id="@+id/txtubookname"
+                android:layout_alignStart="@+id/txtubookid"
+                android:layout_alignEnd="@+id/txtubookid"
+                android:background="@color/red"
+                android:textAlignment="center"
+                android:editable="false" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtubookcategory"
+                android:layout_marginTop="27dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/txtubooklocation"
+                android:layout_alignStart="@+id/txtubooklocation"
+                android:background="@color/red"
+                android:layout_alignEnd="@+id/txtubooklocation"
+                android:textAlignment="center"
+                android:editable="false" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtubooklocation"
+                android:textColor="@color/white"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/txtubookname"
+                android:layout_alignStart="@+id/txtubookname"
+                android:background="@color/red"
+                android:textAlignment="center"
+                android:layout_alignEnd="@+id/txtubookname"
+                android:editable="false" />
+
+            <TextView
+                android:text="Sorry Book Borrowed By another Member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:layout_alignTop="@+id/btngetbook"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:text="Subscribe this book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btngetbook"
+                android:layout_marginTop="39dp"
+                android:background="@color/blue"
+                android:layout_below="@+id/txtstatus"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_alignStart="@+id/btnusearchbook"
+                android:layout_alignEnd="@+id/txtstatus" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/txtubookname"
+                android:layout_alignStart="@+id/textView18"
+
+                android:text="Book Location"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Book Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28"
+                android:textStyle="bold"
+                android:layout_below="@+id/txtubooklocation"
+                android:layout_alignStart="@+id/textView27"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtstatus"
+                android:textColor="@color/white"
+                android:layout_marginTop="27dp"
+                android:background="@color/red"
+                android:layout_below="@+id/txtubookcategory"
+                android:layout_alignStart="@+id/txtubookcategory"
+                android:layout_alignEnd="@+id/txtubookcategory"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:editable="false" />
+
+            <TextView
+                android:text=" Book Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView30"
+                android:layout_below="@+id/txtubookcategory"
+                android:textStyle="bold"
+                android:layout_alignStart="@+id/textView28"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text="Book Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="42dp"
+                android:textStyle="bold"
+                android:id="@+id/textView18"
+                android:layout_above="@+id/txtubooklocation"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

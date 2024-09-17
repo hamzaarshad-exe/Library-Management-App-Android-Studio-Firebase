@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_admin__ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.publiclibrary.User_UI">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                android:background="@drawable/edittext">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:text="Fine and Remaining Dues"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/blue"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="19dp" />
+
+                <Button
+                    android:text="Add "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnaddcategory"
+                    android:background="@color/dark_red"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:textStyle="normal|bold"
+                    android:textSize="16sp"
+                    android:layout_alignStart="@+id/txtcate"
+                    android:layout_alignEnd="@+id/txtcate" />
+
+                <EditText
+                    android:layout_width="326dp"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtcate"
+                    android:hint="Charges"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:background="@drawable/edittext"
+                    android:paddingStart="5dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_above="@+id/btnaddcategory"
+                    android:layout_alignEnd="@+id/txtcateid"
+                    android:layout_alignStart="@+id/txtcateid" />
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtcateid"
+                    android:hint="Member ID "
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:background="@drawable/edittext"
+                    android:paddingStart="5dp"
+                    android:textAlignment="center"
+                    android:layout_above="@+id/txtcate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="7dp" />
+
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="289dp"
+                android:background="@drawable/edittext">
+
+
+                <TextView
+                    android:text="Manage Fine/Dues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:id="@+id/textView12"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/blue" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtcateid2"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/edittext"
+                    android:hint="Member ID"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/textView12"
+                    android:layout_alignEnd="@+id/textView12"
+                    android:layout_marginEnd="13dp" />
+
+                <Button
+                    android:text="Search"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnsearchcate"
+                    android:background="@color/blue"
+                    android:layout_alignTop="@+id/txtcateid2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="24dp" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/txtcate2"
+                    android:background="@drawable/edittext"
+                    android:textAlignment="center"
+                    android:hint="New Charges"
+                    android:layout_centerVertical="true"
+                    android:layout_alignStart="@+id/txtcateid2"
+                    android:layout_alignEnd="@+id/btnsearchcate" />
+
+                <Button
+                    android:text="Update"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnupdatecate"
+                    android:background="@color/dark_red"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="35dp"
+                    android:layout_below="@+id/txtcate2"
+                    android:layout_alignStart="@+id/txtcate2" />
+
+                <Button
+                    android:text="Delete"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btndeletecate"
+                    android:background="@color/dark_red"
+                    android:textStyle="normal|bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_alignBaseline="@+id/btnupdatecate"
+                    android:layout_alignBottom="@+id/btnupdatecate"
+                    android:layout_alignEnd="@+id/txtcate2" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
